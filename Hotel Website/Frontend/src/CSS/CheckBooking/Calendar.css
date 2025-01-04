@@ -1,0 +1,95 @@
+
+
+
+/* \\\\\\\\\ */
+
+
+.CBox{
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 4px !important;
+}
+.CTContainer{
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: var(--box-Shadow3); /* Shadow effect */
+    padding: 20px; /* Padding inside the calendar */
+    background-color: var(--low-white-color); /* White background for calendar */
+}
+#CBox1{
+    background-color: var(--secondary-color);
+}
+#CBox2{
+    background-color: var(--Blue-color);
+}
+#CBox3{
+    background-color: var(--Brown-color);
+}
+
+.CBtn{
+    padding: 1rem 1rem;
+    margin: 0.2rem;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 3px;
+    color: var(--Black-color) !important;
+    font-weight: bold !important;
+}
+.C2Btn{
+    background-color: var(--Brown-color ) !important;
+    color: var(--white-color) !important;
+}
+
+/* Change */
+/* Calendar.css */
+.entrance-color {
+    background-color: var(--low-entrance-color) !important; /* Entrance color */
+}
+
+.brown-color {
+    background-color: var(--low-Brown-color) !important; /* Departure color */
+}
+.booked-date {
+    background-color: var(--low-Blue-color) !important; /* Departure color */
+    color: white !important; /* Optional: change text color for better contrast */
+}
+
+
+
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 820px){
+    .CBtn{
+        padding: 0.7rem 0.8rem !important;
+        margin: 0.2rem !important;
+        font-size: 0.8rem !important;
+    }
+}
+@media (max-width : 650px){
+    .CBtn{
+        padding: 0.6rem 0.7rem !important;
+        margin: 0.1rem !important;
+        font-size: 0.7rem !important;
+    }
+}
+@media (max-width : 420px){
+    .CBtn{
+        padding: 0.6rem 0.6rem !important;
+        margin: 0.1rem !important;
+        font-size: 0.6rem !important;
+    }
+}
+@media (max-width : 500px){
+    .CBox{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 2px !important;
+    }
+    #CSize strong{
+        font-size: 0.7rem !important;
+    }
+    #CSize{
+        margin: 3px !important;
+    }
+}
