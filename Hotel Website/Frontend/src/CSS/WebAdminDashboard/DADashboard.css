@@ -1,0 +1,138 @@
+.DBox{
+    height: 8.5rem;
+    background-color: var(--low-black-color);
+    border-radius: 4px;
+    box-shadow: var(--box-Shadow2);
+}
+.DBTIcon{
+    border-radius: 50%;
+    width: auto;
+}
+#DBIcon1{
+    background-color: var(--low-light-entrance-color);
+}
+#DBIcon2{
+    background-color: var(--low-light-green-color);
+}
+#DBIcon3{
+    background-color: var(--low-light-purple-color);
+}
+#DBIcon4{
+    background-color: var(--low-light-pink-color);
+}
+/* ----*-----Icons----*---- */
+#DBTIcon2{
+    fill: var(--low-green-color) !important;
+}
+#DBTIcon3{
+    fill: var(--low-purple-color) !important;
+}
+#DBTIcon4{
+    fill: var(--low-pink-color) !important;
+}
+.DAMConatiner{
+    background-color: var(--low-black-color);
+    border-radius: 4px;
+    box-shadow: var(--box-Shadow2);
+}
+
+
+/* ----*-----DAProFileImg----*---- */
+.DAProFileImg{
+    border-radius: 50%;
+    width: 17rem;
+    height: 17rem;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    box-shadow: var(--box-Shadow1);
+}
+
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 1400px){
+    .DAProFileImg{
+    width: 13rem;
+    height: 13rem;
+    }
+    .DAEConatiner{
+        padding-inline: 1.4rem !important;
+    }
+    .Count{
+        font-size: 4.5rem !important;
+    }
+}
+@media (max-width : 1105px){
+    .DBox{
+        height: 7rem !important;
+        margin-inline: 0.2rem !important;
+        padding-inline: 0.4rem !important;
+    }
+    .DAMConatiner1{
+        flex-direction: column !important;
+    }
+    .DAProFileImg{
+        width: 7.5rem;
+        height: 7.5rem;
+        }
+        .DAEConatiner{
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            flex-direction: column !important;
+            padding-inline: 0rem !important;
+            padding-top: 1rem !important;
+            padding-bottom: 0.2rem !important;
+            margin-top: 0.4rem !important;
+            margin-left: 0px !important;
+        }
+    .Container1{
+        flex-direction: column !important;
+    }
+    .Count{
+        font-size: 4.2rem !important;
+    }
+    .DAEndContainer{
+        flex-direction: column !important;
+    }
+    .DAEndContainer1{
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 0.4rem;
+    }
+    
+}
+@media (max-width : 870px){
+    .DBox{
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        height: 7rem !important;
+        margin-inline: 0.2rem !important;
+        padding-inline: 0.4rem !important;
+    }
+    .DATConatiner{
+        flex-direction: column !important;
+    }
+    .Count{
+        font-size: 2.7rem !important;
+    }
+}
+@media (max-width : 500px){
+    .PieGraph{
+        width: 100% !important;
+    }
+    
+    .Count{
+        font-size: 1.9rem !important;
+        margin-inline: 1.7rem !important;
+    }
+    .DAProFileImg{
+        width: 7.1rem;
+        height: 7.1rem;
+        }
+    
+    
+
+}
