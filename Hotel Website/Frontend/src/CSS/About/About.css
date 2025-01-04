@@ -1,0 +1,76 @@
+.AboutContainer{
+    background-color: var(--Blue-color);
+}
+.Block1 p{
+    width : 70%;
+}
+
+.About1Img {
+    height: 43rem !important;
+    animation: float 4s ease-in-out infinite; /* Adjust duration and timing function as needed */
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Move back down */
+    }
+  }
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 1500px){
+    .Block1 p{
+        width : 90%;
+    }
+}
+@media (max-width : 1135px){
+    .BContainer{
+        flex-direction: column !important;
+    }
+    .Block1{
+        text-align: center !important;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+    .Block2{
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+    .Block1 p{
+        width : 100%;
+    }
+}
+@media (max-width : 700px){
+    .Block1{
+        margin-top: 1rem !important;
+    }
+    .Block2{
+        margin-top: 0.5rem !important;
+    }
+    .About1Img{
+        height: 23rem !important;
+    }
+
+}
+@media (max-width : 400px){
+    #ATText{
+        width: 15rem !important;
+    }
+    .About1Img{
+        height: 16rem !important;
+    }
+    .Block1{
+        margin-top: 0.5rem !important;
+    }
+    .Block2{
+        margin-top: 0.2rem !important;
+    }
+
+}
