@@ -1,0 +1,63 @@
+.Gtitle{
+    color: var(--primary-color) !important;
+}
+.Gtitle:hover{
+    color: var(--white-color) !important;
+}
+.GContainer{
+    border-top: 0.5px solid var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr)); /* Responsive grid */
+    gap: 10px; /* Space between items */
+    padding: 1rem; /* Optional padding */
+    place-items: center;
+}
+  
+.gallery-block {
+  width: 25rem !important;
+  height: 20rem !important;
+  
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex: 0 0 23%; /* Adjust based on number of logos */
+  overflow: hidden !important; /* Ensure overflow is hidden */   
+}
+.gallery-image{
+    overflow: hidden !important; /* Ensure overflow is hidden */   
+    
+    
+  }
+  .gallery-image img {
+    width: 100% !important; 
+    height: 100% !important;
+    object-fit: cover !important; /* Ensure the image covers the area */
+  }
+
+  /* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 500px){
+    .gallery-block {
+        width: 19rem;
+        height: 16rem;
+      }
+      .GContainer{
+        
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); /* Responsive grid */
+        gap: 3px !important;
+
+      }
+}
+@media (max-width : 400px){
+    .gallery-block {
+        width: 16rem;
+        height: 13rem;
+      }
+      .GContainer{
+        
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); /* Responsive grid */
+        gap: 3px !important;
+
+      }
+}
