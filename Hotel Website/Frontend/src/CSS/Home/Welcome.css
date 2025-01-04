@@ -1,0 +1,156 @@
+/* UserChat */
+.UserChat{
+    position: fixed !important;
+    right: 20px !important;  
+    bottom: 2.6rem !important;  
+    z-index: 1000; 
+}
+.tooltip-inner{
+    max-width: 100% !important;
+    border-radius: 40px;
+    background-color: var(--Black-color) !important;
+    padding: 0.1rem !important;
+}
+.tooltip.show {
+    opacity: var(--bs-tooltip-opacity);
+    transition: 0.4s opacity ease-in;
+}
+
+.UChatContainer{
+    width: 23rem !important;
+}
+.Uchat2{
+    background: linear-gradient(340deg, rgb(0, 0, 0), rgba(37, 37, 37, 0.363), rgba(255, 255, 255, 0.459));
+    height: 20rem !important;
+    width: 100% !important;
+    overflow: auto !important;
+    border-radius: 20px;
+}
+.Uchat1{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, black, var(--low-Blue-color), rgba(255, 255, 255, 0.459));
+    border-radius: 20px;
+}
+#UserChatImg{
+    border-radius: 50% !important;
+    width: 4.5rem !important;
+    height: 4.5rem !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+.UserChatBTN {
+    position: relative !important;
+    outline: none !important;
+    border: none !important;
+    padding: 0.5px;
+    cursor: pointer;
+    animation: float 4s ease-in-out infinite; /* Adjust duration and timing function as needed */
+  }
+  #UserChatImg:hover{
+    box-shadow: var(--box-Shadow4) !important;
+}
+  
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Move back down */
+    }
+}
+
+/* Welcome */
+.col {
+    flex: 0 0 0% !important;
+}
+.borders{
+    border-right: 0.5px solid var(--primary-color);
+    border-left: 0.5px solid var(--primary-color);
+}
+
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 1400px){
+    #welText{
+        text-align: center !important;
+    }
+    #welcome{
+        display: none !important;
+    }
+    #welImg{
+        width: 32rem !important;
+    }
+    .UserChatBTN{
+        right: 20px;  /* Adjust to your preferred spacing */
+    }
+    #UserChatImg{
+        width: 4.2rem !important;
+        height:4.2rem !important;
+    }
+}
+@media (max-width : 1100px){
+    
+    #welImg{
+        width: 28rem !important;
+    }
+}
+
+@media (max-width : 900px){
+    
+    #welImg{
+        width: 23rem !important;
+    }
+    .UserChatBTN{
+        right: 20px;  /* Adjust to your preferred spacing */
+    }
+    #UserChatImg{
+        width: 4.1rem !important;
+        height:4.1rem !important;
+    }
+    .UserChatBTN{
+        right: 10px !important;  /* Adjust to your preferred spacing */
+    }
+}
+@media (max-width : 700px){
+    
+    #welImg{
+        width: 18rem !important;
+    }
+    #welText{
+        width: 23rem !important;
+    }
+    .UChatContainer{
+        width: 20rem !important;
+    }
+    #ChatIcon{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+@media (max-width : 450px){
+    
+    #welImg{
+        width: 10rem !important;
+    }
+    #welText{
+        width: 14rem !important;
+    }
+    #UserChatImg{
+        width: 3.9rem !important;
+        height:3.9rem !important;
+    }
+    .UserChatBTN{
+        right: 5px !important;  /* Adjust to your preferred spacing */
+    }
+    .UChatContainer{
+        width: 16rem !important;
+    }
+}

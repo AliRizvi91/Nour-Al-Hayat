@@ -1,0 +1,11 @@
+
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 1256px){
+    #RRow{
+        display: flex !important;
+        justify-content: center !important;
+    }
+}

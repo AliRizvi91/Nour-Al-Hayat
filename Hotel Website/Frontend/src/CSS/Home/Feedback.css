@@ -1,0 +1,19 @@
+.FeedBImg{
+    width: 6rem !important;
+    height: 6rem !important;
+    border-radius: 50% !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+.FeebackB{
+    width: 50rem;
+}
+[data-bs-theme=dark].carousel .carousel-indicators [data-bs-target] {
+    background-color: var(--primary-color) !important;
+    height: 0.6rem !important;
+    width: 0.6rem !important;
+    border-radius: 50% !important;
+}
+.carousel-indicators {
+    bottom: -2rem !important;
+}

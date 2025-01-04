@@ -1,0 +1,61 @@
+.gallery {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .gallery-inner {
+      display: flex;
+      animation: scroll 20s linear infinite;
+    }
+.gallery-inner:hover {
+    animation-play-state: paused;
+  }
+  
+  .gallery-item {
+  width: 25rem !important;
+  height: 20rem !important;
+  
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex: 0 0 23%; /* Adjust based on number of logos */
+  overflow: hidden !important; /* Ensure overflow is hidden */   
+}
+.gallery-image{
+    overflow: hidden !important; /* Ensure overflow is hidden */   
+    
+    
+  }
+  .gallery-image img {
+    width: 100% !important; 
+    height: 100% !important;
+    object-fit: cover !important; /* Ensure the image covers the area */
+  }
+  
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* Half of the total width for infinite effect */
+    }
+  }
+  
+
+  /* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 1100px){
+  .gallery-item {
+    width: 20rem;
+    height: 12rem;
+  }
+}
+@media (max-width : 700px){
+  .gallery-item {
+    width: 16rem;
+    height: 9rem;
+  }
+}

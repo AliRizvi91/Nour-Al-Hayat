@@ -1,0 +1,38 @@
+
+
+.FIcon{
+    background-color: var(--white-color) !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 50% !important;
+}
+.FContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    gap: 2rem !important; /* Adjust as needed */
+    place-items: center !important;
+    justify-items: center; /* Center items horizontally */
+  }
+  
+  .FBlock {
+    background: var(--Blue-color); /* Match bg-dark */
+    padding:0.5rem; /* Adjust padding */
+    border-radius: 4px; /* Optional: adds rounded corners */
+    color: white; /* Text color */
+    height: 100% !important;
+    width: 22rem !important;
+    box-shadow: var(--box-Shadow2) !important;
+  }
+  
+
+  /* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 400px){
+    .FBlock {
+        width: 14rem !important;
+      }
+      .FContainer {
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+      }
+}
