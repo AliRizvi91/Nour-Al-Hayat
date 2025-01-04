@@ -1,0 +1,46 @@
+#storeIcon{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: var(--white-color) !important;
+    width: 3rem !important;
+    height: 3rem !important;
+    border: none !important;
+    border-radius: 50%!important;
+    padding: 1.8rem !important;
+}
+#storeIcon:hover{
+    box-shadow: var(--box-Shadow1) !important;
+}
+.offIcon{
+    fill: var(--Blue-color) !important;
+    width: 1.7rem !important;
+}
+.offcanvas.show:not(.hiding){
+    background-color: var(--Blue-color) !important;
+}
+
+.btn-close {
+    /* --bs-btn-close-bg: url(/assets/images/close.png) !important; */
+    background-image: url(/assets/images/close.png);
+    width: 1rem !important;
+    height: 1rem !important;
+    background-size: contain !important;
+}
+
+.Scircle{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--red-gradient);
+    text-align: center;
+    position: relative;
+    left: 4.1rem;
+}
+
+.checkOut{
+    font-size: 1.3rem !important;
+    padding: 1rem 1rem !important;
+    border-radius: 3px !important;
+    width: 100%;
+}

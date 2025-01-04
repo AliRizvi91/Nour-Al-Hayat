@@ -1,0 +1,29 @@
+.modal-dialog{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.modal-content {
+    background-color: var(--low-black-color) !important;
+    width: 65rem !important;
+    
+}
+.closebtn{
+    border-radius: 2px !important;
+    border: none !important;
+    outline: none !important;
+    background-color: var(--red-color) !important;
+}
+
+.EBtn{
+    font-size: 0.7rem !important;
+    background-color: transparent !important;
+    border: none !important;
+    text-align: start !important;
+    padding: 0px;
+    text-transform: uppercase !important;
+}
+.EBtn:hover{
+    color:  var(--secondary-color) !important;
+    font-weight: bold !important;
+}

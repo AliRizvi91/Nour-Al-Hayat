@@ -1,0 +1,71 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjust minmax value based on your design */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Optional padding */
+    place-items: center !important;
+    justify-items: center; /* Center items horizontally */
+  }
+  
+  .grid-item {
+    text-align: left; /* Align text to the left */
+  }
+  
+.FBox{
+    background-color: var(--white-color);
+    border-radius: 50% !important;
+    padding: 0.3rem !important;
+}
+.F-icons{
+    fill: var(--Black-color) !important;
+    box-shadow: var(--box-Shadow1) !important;
+    font-size: 1.2rem !important;
+}
+.FBox:hover{
+    box-shadow: var(--box-Shadow1) !important;
+}
+.Footer{
+    background-color: var(--Blue-color);
+    padding-top: 2rem;
+}
+.last{
+    background-color: var(--Black-color);
+}
+
+
+.Footer li a:hover{
+    color: var(--secondary-color) !important;
+}
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 960px){
+    .F-Col{
+        display: none !important;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust minmax value based on your design */
+        gap: 14px;
+    }    
+}
+@media (max-width : 680px){
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); /* Adjust minmax value based on your design */
+        gap: 9px;
+    }    
+    .Footer{
+        padding: 0px !important;
+    }
+}
+@media (max-width : 500px){
+    .FooterP{
+        width: 100% !important;
+    }
+    .FBox{
+        padding: 0.2rem !important;
+    }
+}

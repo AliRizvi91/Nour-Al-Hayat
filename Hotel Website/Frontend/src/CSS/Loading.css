@@ -1,0 +1,24 @@
+@keyframes fillAnimation {
+    0% {
+      fill: transparent;
+    }
+    100% {
+      fill: var(--primary-color); /* Replace with the desired fill color */
+    }
+  }
+
+  
+  .animated-fill {
+    animation: fillAnimation 7s backwards; /* Adjust the duration as needed */
+    animation-delay: 0.2s; /* Optional: delay before the animation starts */
+  }
+  .LContainer {
+    margin: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #254e64,#213b4d, #182c3a, #0E1B23) !important;
+    /* background: linear-gradient(90deg, #213b4d,#0E1B23) !important; */
+    height: 100vh;
+}
+  

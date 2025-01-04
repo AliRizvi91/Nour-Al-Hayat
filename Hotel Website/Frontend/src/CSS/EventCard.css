@@ -1,0 +1,30 @@
+.Ebody{
+    border: none;
+    background-color: var(--low-color) !important;
+}
+
+
+.EventCImage{
+    width: 100% !important;
+    height: 15rem !important;
+    overflow: hidden !important;
+}
+.EventCImage img{
+    width: 100%; /* Fill the width of the container */
+    height: 100%; /* Fill the height of the container */
+    object-fit: cover !important; /* Ensure the image covers the area */
+}
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 560px){
+    .Ebody{
+        width: 15rem !important;
+    }
+}
+@media (max-width : 450px){
+    .Ebody{
+        width: 12rem !important;
+    }
+}

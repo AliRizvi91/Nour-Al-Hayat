@@ -1,0 +1,78 @@
+/* Logo */
+.logo{
+    fill: var(--primary-color);
+}
+
+/* Navbar */
+.navbar{
+    background-color: black;
+}
+.navbar-toggler-icon{
+    background-image: url(/assets/images/navToggle.png) !important;
+}
+#navbarNav{
+    justify-content: end !important;
+}
+.navbar>.container{
+    margin: 0px !important;
+}
+.nav-link {
+    position: relative;
+    color: var(--white-color) !important;
+    padding-bottom: 5px; /* Add some padding to the bottom */
+    text-transform: uppercase !important
+    ;
+}
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background: var(--primary-color); /* Color of the underline */
+    transition: width 0.3s ease, left 0.3s ease; /* Transition for width and left */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Full width on hover */
+    left: 0; /* Move to the left */
+}
+
+.nav-link.active::after {
+    width: 100%; /* Full width when active */
+    left: 0; /* Align to the left */
+}
+
+
+/* Overlay */
+.popover-header{
+    text-align: center !important;
+}
+.popover{
+    border-radius: 4px !important;
+    background: var(--low-Blue-color) !important;
+}
+.bs-popover-bottom>.popover-arrow::after{
+    border-bottom-color: var(--low-white-color) !important;
+    display: none !important;
+}
+.popover-body {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important; /* Adjust as needed */
+    grid-auto-rows: 100px; /* Adjust the height of the grid items */
+    justify-items: center !important; /* Center items horizontally */
+    align-items: center !important; /* Center items vertically */
+    text-align: center !important;
+    width: 16.5rem !important;
+    gap: 10px !important;
+}
+.popover-icon:hover{
+    background-color: var(--low-white-color) !important;
+    border-radius: 2px;
+}
+
