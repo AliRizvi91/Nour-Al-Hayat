@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
-import "../../CSS/SignUp/SignUp.css";
+import "../../CSS/SignUp/Signup.css";
 import "../../CSS/WebAdminDashboard/Admin.css";
 import ImageUploader from "../ImageUploader";
 import MButton from "../MButton";

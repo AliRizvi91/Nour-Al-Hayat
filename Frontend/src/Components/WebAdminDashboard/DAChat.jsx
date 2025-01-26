@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import io from "socket.io-client";
 import { getAllMessages, postMessage } from "../../RTK/Thunks/MessageThunks";
 import "../../CSS/WebAdminDashboard/Admin.css";
-import "../../CSS/SignUp/SignUp.css";
+import "../../CSS/SignUp/Signup.css";
 import SearchIcon from '@mui/icons-material/Search';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
