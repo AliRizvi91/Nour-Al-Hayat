@@ -1,0 +1,47 @@
+.mainContainer{
+    height: 100vh !important;
+    width: 100% !important;
+    background: linear-gradient(90deg, #254e64,#213b4d, #182c3a, #0E1B23);
+}
+.smSpage{
+    /* background-color: bisque !important; */
+    width: 32rem !important;
+    background: rgb(189 239 255 / 11%) !important; /* Base color with transparency */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2) !important; /* Shadow for depth */
+    border-radius: 5px !important; /* Rounded corners */
+}
+
+.form-control{
+    background-color: var(--Input-color) !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 3px !important;
+    color: var(--white-color) !important;
+    box-shadow: none !important;
+    font-size: 0.8rem !important;
+    font-weight: bold;
+}
+
+.form-control::placeholder{
+    color: var(--low-white-color) !important;
+}
+
+
+  .custom-select option {
+    background-color: var(--Blue-color) !important; /* Same background color for options */
+    color: var(--white-color) !important; /* Text color for options */
+  }
+
+  /* Otp */
+  .otpInput{
+    letter-spacing: 10px !important;
+  }
+  
+  /* ////////--///////// */
+  /* -----Resposive----- */
+  
+  @media (max-width : 500px){
+    .SLink{
+      font-size: 60% !important;
+    }
+}

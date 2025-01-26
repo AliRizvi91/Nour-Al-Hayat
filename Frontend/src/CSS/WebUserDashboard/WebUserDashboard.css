@@ -1,0 +1,56 @@
+.css-j400xw-MuiPaper-root-MuiDrawer-paper{
+    background-color: var(--Blue-color) !important;
+}
+.css-153gm7s-MuiPaper-root-MuiDrawer-paper{
+    background-color: var(--Blue-color) !important;
+}
+.css-9c0h7a-MuiButtonBase-root-MuiListItemButton-root:hover{
+    background-color: var(--low-white-color) !important;
+    border-radius: 4px !important;
+}
+.css-9c0h7a-MuiButtonBase-root-MuiListItemButton-root:hover .icons{
+    fill: var(--entrance-color) !important;
+}
+.css-95f9g5-MuiToolbar-root{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.css-9mgopn-MuiDivider-root{
+    background-color: var(--primary-color) !important;
+}
+.css-95f9g5-MuiToolbar-root{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.Dpara{
+    font-size: 9px !important;
+}
+
+.css-95f9g5-MuiToolbar-root{
+    background-color: var(--Blue-color) !important;
+}
+.css-1v5u2yv{
+    text-align: center !important;
+}
+
+.css-1v5u2yv{
+    padding: 0px !important;
+}
+/* Logout */
+.Logout{
+    height: auto;
+    width: 100%;
+    background: var(--entrance-color);
+    outline: none !important;
+    border: none !important;
+    border-radius: 1rem;
+    color: var(--Black-color);
+    font-weight: bold;
+}
+.Logout:hover{
+    color: var(--white-color);
+    background: var(--low-Brown-color);
+    box-shadow: var(--box-Shadow1);
+    font-weight: normal;
+}

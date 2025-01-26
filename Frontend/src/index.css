@@ -1,0 +1,218 @@
+body{
+    margin: 0px !important;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+    font-family: "Lato", sans-serif;
+    background-color: var(--Black-color) !important;
+    cursor: url(/assets/images/cursor.png),auto;
+}
+*{
+    color: var(--white-color);
+    /* color: var(--Black-color); */
+    font-size: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+    /* color: var(--Black-color); */
+    color: var(--white-color) !important;
+}
+/* Color Variables */
+:root{
+    --primary-color : #FFD28E ;
+    --secondary-color : #ffaa2b;
+    --Blue-color : #091d24;
+    --white-color : white;
+    --Black-color : #07151b;
+    --red-color : rgb(206, 9, 9) !important;
+    --green-color : rgb(0, 124, 6) !important;
+    
+    /* Low Colors */
+    --low-color : rgba(49, 48, 43, 0.281);
+    --low-black-color : rgba(0, 0, 0, 0.733);
+    --low-Blue-color : #091d24c4;
+    --low-entrance-color : #ffad339a ;
+    --low-white-color : rgba(255, 255, 255, 0.329);
+    --low-red-color : rgba(180, 125, 125, 0.116);
+    --low-Brown-color : #251301ad;
+    --low-green-color : rgba(64, 255, 74, 0.527) !important;
+    --low-purple-color : rgba(221, 83, 255, 0.568) !important;
+    --low-pink-color : rgba(255, 88, 227, 0.568) !important;
+    --low-red-color : rgba(206, 9, 9, 0.466) !important;
+    /* Low Light Colors */
+    --low-light-entrance-color : #ffb13d52 ;
+    --low-light-green-color : #3dff3d52 ;
+    --low-light-purple-color : #b83dff44 ;
+    --low-light-pink-color : #fd007644 ;
+    --low-light-black-color : rgba(0, 0, 0, 0.212);
+    --low-light-white-color : rgba(255, 255, 255, 0.11);
+
+    /* Calendar Colors */
+    --entrance-color : #ffad33 ;
+    --Brown-color : #251301;
+
+    /* Gradients */
+    --gradient : linear-gradient(120deg, #fac678,#fcae3a, #fd9e0f);
+    --red-gradient : linear-gradient(40deg, #ff3f3f, #ff0000);
+    /* Box Shadow */
+    --box-Shadow1: rgba(255, 255, 255, 0.452) 0px 2px 19px 0px;
+    --box-Shadow2: rgba(128, 128, 128, 0.267) 0px 2px 19px 0px;
+    --box-Shadow3: inset 0 0px 130px 38px rgba(255, 255, 255, 0.479) !important;
+    --box-Shadow4: rgba(255, 255, 255, 0.795) 0px 2px 35px 0px;
+    /* Input */
+    --Input-color : rgba(255, 255, 255, 0.171);
+   
+
+}
+a,li ,Link,button {
+    font-size: 0.8rem !important;
+    cursor: url(/assets/images/Pointer.png),pointer;
+    text-decoration: none;
+    color: var(--white-color);
+}
+.lightOrange{
+    color: var(--primary-color) !important;
+}
+
+.line{
+    background: var(--primary-color);
+}
+p{
+    font-size: 0.8rem !important;
+}
+
+/* Icon */
+.icons{
+    font-size: 2rem !important;
+    fill: var(--primary-color) !important;
+    cursor: pointer;
+}
+.icons:hover{
+    fill: var(--entrance-color) !important;
+    cursor: pointer;
+}
+/* Delete */
+.delete{
+    fill: var(--red-color) !important;
+  }
+.delete:hover{
+    fill: red !important;
+  }
+
+.button{
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+
+
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 900px){
+    h1{
+        font-size: 170% !important;
+    }
+    h2{
+        font-size:160% !important;
+    }
+    h3{
+        font-size: 150% !important;
+    }
+    h4{
+        font-size: 140% !important;
+    }
+    h5{
+        font-size: 130% !important;
+    }
+    h6{
+        font-size: 120% !important;
+    }
+    
+    p{
+        font-size: 75% !important;
+    }
+    .S-Head{
+        padding: 0px !important;
+    }
+    .line{
+        width: 15rem !important;
+    }
+    #welImg{
+        margin-bottom: 5px !important;
+    }
+    .UPImg{
+        width: 4.5rem !important;
+    }
+    .icons{
+        font-size: 1.2rem !important;
+        }
+}
+@media (max-width : 700px){
+    h1{
+        font-size: 120% !important;
+    }
+    h2{
+        font-size:110% !important;
+    }
+    h3{
+        font-size: 100% !important;
+    }
+    h4{
+        font-size: 90% !important;
+    }
+    h5{
+        font-size: 80% !important;
+    }
+    h6{
+        font-size: 70% !important;
+    }
+    p{
+        font-size: 65% !important;
+    }
+    .line{
+        width: 11rem !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+        height: 1.5px !important;
+    }
+
+}
+@media (max-width : 400px){
+    h1{
+        font-size: 100% !important;
+    }
+    h2{
+        font-size:70% !important;
+    }
+    h3{
+        font-size: 60% !important;
+    }
+    h4{
+        font-size: 57% !important;
+    }
+    h5{
+        font-size: 53% !important;
+    }
+    h6{
+        font-size: 50% !important;
+    }
+    p{
+        font-size: 45% !important;
+    }
+    .line{
+        width: 8rem !important;
+        margin-top: 0.9rem !important;
+        margin-bottom: 0.9rem !important;
+        height: 0.5px !important;
+    }
+    .icons{
+    font-size: 1rem !important;
+    }
+    .UPImg{
+        width: 3.3rem !important;
+    }
+}

@@ -1,0 +1,41 @@
+.image-container {
+    position: relative;
+  }
+  
+  .DGift {
+    transition: opacity 0.7s ease;
+  }
+  
+  .fade-out {
+    opacity: 0; /* Fade out effect */
+  }
+  
+  .link-text {
+    position: absolute;
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%);
+    font-size: 15rem; /* Adjust as needed */
+    color: rgb(255, 255, 255); /* Change color as needed */
+  }
+  
+  /* GIftCard Responsive */
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 940px){
+  .DGift{
+      width: 20rem !important;
+  }
+}
+@media (max-width : 740px){
+  .DGift{
+      width: 15rem !important;
+  }
+}
+@media (max-width : 440px){
+  .DGift{
+      width: 13rem !important;
+  }
+}

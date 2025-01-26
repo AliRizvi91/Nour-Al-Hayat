@@ -1,0 +1,95 @@
+.PImg{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.PImg:hover{
+    background-image: url('/assets/images/Camera.png') !important;
+    cursor: pointer;
+    transition: 0.2s ease-in !important;
+}
+.block1{
+    background: var(--low-light-white-color) !important;
+    border-radius: 4px;
+    width: 55%;
+}
+.block2{
+    width: 100%;
+}
+.block2 textarea::placeholder{
+    color: var( --low-entrance-color) !important;
+}
+.block2 textarea{
+    border-radius: 4px !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: var(--low-light-white-color) !important;
+    color: var(--white-color) !important;
+}
+.block2{
+    background-color: var(--low-light-white-color);
+    border-radius: 4px !important;
+}
+.block3{
+    background-color: var(--low-light-white-color);
+    border-radius: 4px !important;
+    overflow-y: scroll !important;
+    max-height: 28rem !important;
+}
+/* OFeed */
+.OFeedImg{
+    width: 3rem !important;
+    height: 3rem !important;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.OFeedpara{
+    border: 0.1px solid var(--low-white-color ) !important;
+    border-radius: 4px;
+}
+.OFeedpara p{
+    font-size: 0.6rem !important;
+}
+
+
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+
+@media (max-width : 1050px){
+    .mainContainer{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .block1 {
+        width: 100% !important;
+    }
+    .block2{
+        margin-top: 1rem !important;
+    }
+}
+@media (max-width : 550px){
+    .PImg{
+        width: 11rem !important;
+        height: 11rem !important;
+    }
+    .OFeedImg{
+        width: 2rem !important;
+        height: 2rem !important;
+    } 
+}
+@media (max-width : 400px){
+    .PImg{
+        width: 9rem !important;
+        height: 9rem !important;
+    }
+}

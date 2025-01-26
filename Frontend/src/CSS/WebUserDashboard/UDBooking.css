@@ -1,0 +1,29 @@
+.DBImg{
+    background-color: rgb(122, 55, 0);
+    width: 100%;
+    height: 100%;
+    position: relative !important;
+    top: 1rem;
+}
+.DBImg img{
+    width: 100% !important;
+}
+.DBBlock{
+    width: 100%;
+}
+.DBBox{
+    width: 9rem;
+    height: 9rem;
+    background-color: var(--low-entrance-color);
+    border-radius: 4px;
+    background-position: center !important;
+    background-size: cover;
+}
+.DBRModal{
+    background: transparent !important;
+    border: none !important;
+}
+.DBRModal:hover{
+    box-shadow: var(--box-Shadow1) !important;
+    transition: 0.2s ease-out;
+}

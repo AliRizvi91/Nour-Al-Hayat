@@ -1,0 +1,72 @@
+/* Roman Font */
+.Roman {
+    font-family: "Luxurious Roman", serif !important;
+    font-weight: 400;
+    font-style: normal;
+  }
+/* Script Font */
+.Script {
+    font-family: "Luxurious Script", cursive !important;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  /* PhoneInput */
+  .react-tel-input .selected-flag{
+    border-radius: 0px !important;
+    background-color: var(--Input-color) !important;
+  }
+
+
+  /* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--Black-color); 
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--white-color);
+  border-radius: 3px; /* Rounded corners */
+  transition: background 0.3s; /* Smooth transition for color change */
+}
+
+/* Glowing effect on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color); /* Darker thumb color on hover */
+  box-shadow: var(--box-Shadow1); /* Glowing effect */
+}
+
+.boxIcon{
+  padding: 1.2rem !important;
+  background-color: var(--white-color);
+  border-radius: 50% !important;
+  position: absolute;
+  right: 8px !important;
+}
+.boxIcon .icons{
+  fill: var(--Black-color) !important;
+}
+
+
+
+/* Profile Image */
+.profileImg{
+  /* background: red !important; */
+  border-radius: 50% !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+  width: 3.2rem !important;
+  height: 3.2rem !important;
+  background-position: center !important;
+  background-size: cover !important;
+  object-fit: cover !important;
+
+}
+
+

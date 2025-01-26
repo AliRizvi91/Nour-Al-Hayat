@@ -1,0 +1,13 @@
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 1125px){
+    .HEXContainer{
+        flex-direction: column !important;
+    }
+}
+@media (max-width : 718px){
+    #HECCol{
+        flex-direction: column !important;
+    }
+}

@@ -1,0 +1,35 @@
+.RcardSImg{
+    width: 23rem !important;
+}
+.StoreRCard{
+    background-color: var(--low-color) !important;
+}
+
+
+  .description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    overflow: hidden;
+  }
+  
+  /* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 900px){
+    .RcardSImg{
+        width: 18rem !important;
+    }
+}
+@media (max-width : 600px){
+    .RcardSImg{
+        width: 14rem !important;
+    }
+}
+@media (max-width : 400px){
+    .RcardSImg{
+        width: 9rem !important;
+    }
+}
+
+

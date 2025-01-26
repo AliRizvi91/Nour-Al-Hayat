@@ -1,0 +1,194 @@
+#sendIcon{
+    fill: var(--secondary-color) !important;
+}
+#sendIcon:hover{
+    fill: greenyellow !important;
+}
+#person2{
+    position: relative;
+    left: 55.4%;
+    background-color: var(--low-Blue-color);
+}
+#person1{
+    background-color: var(--low-entrance-color);
+}
+.message{
+    font-size: 12px !important;
+    width: 45%;
+    text-align: start;
+    box-shadow: var(--box-Shadow2);
+    border-radius: 5px;
+}
+#ChatIcon{
+    font-size: 1.8rem !important;
+    fill: var(--low-black-color) !important;
+}
+#ChatIcon:hover{
+    fill: var(--primary-color) !important;
+    transition: fill 0.4s;
+}
+.ChatTextArea{
+    background-color: var(--low-white-color);
+    position: relative;
+    bottom: 0px;
+}
+.ChatTextArea textarea{
+    border-radius: 2rem !important;
+    color: var(--low-black-color) !important;
+    outline: none;
+}
+.ChatDate{
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--Black-color);
+    box-shadow: var(--box-Shadow2);
+    text-align: center;
+}
+.ChatDate p{
+    color: var(--Black-color) !important;
+    font-size: 13px !important;
+    font-weight: bold;
+}
+.CUser:hover{
+    background-color: var(--low-light-white-color) !important;
+    transition: background-color 0.3s;
+    cursor: pointer !important;
+    border-radius: 4px !important;
+}
+.CUserPara {
+    font-size: 10px !important;
+    display: -webkit-box; /* For Safari */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; /* Limit to 1 line */
+    height: 0.5em; /* Half line height */
+    color: var(--low-white-color) !important;
+}
+.DAGalleryContainer{
+    background-color: var(--low-light-white-color);
+    border-radius: 4px !important;
+}
+.GiftContainer1{
+    background: rgb(189 239 255 / 11%) !important; /* Base color with transparency */
+    border-radius: 4px !important;
+}
+.table>:not(caption)>*>* {
+    background-color: rgb(189 239 255 / 11%) !important; /* Base color with transparency */
+    border-radius: 4px !important;
+    color: var(--white-color) !important;
+}
+.DARoomContainer{
+    background: rgb(189 239 255 / 11%) !important; /* Base color with transparency */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2) !important; /* Shadow for depth */
+}
+#Green{
+    fill: var(--low-green-color) !important;
+    font-size: 1.5rem !important;
+}
+#Red{
+    fill: var(--low-red-color) !important;
+    font-size: 1.5rem !important;
+}
+#grey{
+    fill: var(--low-white-color) !important;
+    font-size: 1.5rem !important;
+}
+#grey:hover{
+    fill: var(--white-color) !important;
+}
+
+.DASCardRP{
+    font-size: 0.6rem !important;
+}
+.DASIcon{
+    font-size: 3rem !important;
+}
+.DASCard{
+    background-color: var(--low-light-white-color) !important;
+    border-radius: 4px !important;
+}
+#RCPara{
+    display: -webkit-box; /* For Safari */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis at the end */
+  font-size: 0.7rem !important;
+}
+.DASCardB1{
+    flex-direction: row !important;
+}
+
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+
+@media (max-width : 1050px){
+    .DAChatCon_{
+        flex-direction: column !important;
+    }
+}
+@media (max-width : 800px){
+    .DARoomForm{
+        width: 21rem !important;
+    }
+}
+@media (max-width : 400px){
+    .DARoomForm{
+        width: 17rem !important;
+    }
+}
+.DARoomContainer{
+    background: rgb(189 239 255 / 11%) !important; /* Base color with transparency */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2) !important; /* Shadow for depth */
+}
+#Green{
+    fill: var(--green-color) !important;
+}
+#Red{
+    fill: var(--red-color) !important;
+}
+#grey{
+    fill: var(--low-white-color) !important;
+}
+
+.DASCardRP{
+    font-size: 0.6rem !important;
+}
+.DASIcon{
+    font-size: 3rem !important;
+}
+.DASCard{
+    background-color: var(--low-light-white-color) !important;
+    border-radius: 4px !important;
+}
+#RCPara{
+    display: -webkit-box; /* For Safari */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis at the end */
+}
+.DASCardB1{
+    flex-direction: row !important;
+}
+
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 775px){
+    .DAGalleryForm{
+        width: 19rem !important;
+    }
+}
+@media (max-width : 800px){
+    .DARoomForm{
+        width: 21rem !important;
+    }
+}
+@media (max-width : 400px){
+    .DARoomForm{
+        width: 17rem !important;
+    }
+}

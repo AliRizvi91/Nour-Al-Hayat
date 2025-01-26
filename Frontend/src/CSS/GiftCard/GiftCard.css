@@ -1,0 +1,25 @@
+.carousel-item.active{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 550px){
+    .Gifts{
+        width: 15rem !important;
+    }
+    .GiftsC{
+        width: 20rem !important;
+    }
+}
+@media (max-width : 350px){
+    .Gifts{
+        width: 12rem !important;
+    }
+    .GiftsC{
+        width: 17rem !important;
+    }
+}

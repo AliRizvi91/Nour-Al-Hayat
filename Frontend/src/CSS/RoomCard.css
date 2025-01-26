@@ -1,0 +1,78 @@
+.RCard{
+    background-color: var(--low-color) !important;
+}
+.RCard p{
+    font-size: 0.7rem !important;
+}
+.RDetail{
+    padding: 0.7rem 1.1rem !important;
+    background: var(--gradient) !important;
+    border-radius: 0px !important;
+    text-transform: uppercase;
+    font-size: 0.7rem !important;
+    border: none !important;
+    color: var(--black-color) !important;
+}
+.RDetail:hover{
+    background: transparent !important;
+    border: 1px solid var(--secondary-color) !important;
+    font-weight: bold;
+    color: var(--white-color) !important;
+}
+#RCardText{
+    display: -webkit-box; /* For Safari */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis at the end */
+}
+
+
+/* ////////--///////// */
+/* -----Resposive----- */
+
+@media (max-width : 1105px){
+    .RCard{
+        width: 28rem !important;
+    }
+    .RCardBtn{
+        top: 14rem !important;
+    }
+    .RDetail{
+    padding: 0.6rem 0.9rem !important;
+    }
+}
+@media (max-width : 1105px){
+    .RCard{
+        width: 24rem !important;
+    }
+    .RCardBtn{
+        top: 13rem !important;
+    }
+    .RDetail{
+    padding: 0.6rem 0.9rem !important;
+    }
+}
+@media (max-width : 750px){
+    .RCard{
+        width: 19rem !important;
+    }
+    .RCardBtn{
+        top: 9.5rem !important;
+    }
+}
+@media (max-width : 450px){
+    .RCard{
+        width: 15rem !important;
+    }
+    .RCardBtn{
+        top: 7.5rem !important;
+    }
+    .Rbody p{
+        font-size: 60% !important;
+    }
+    .RDetail{
+        padding: 0.4rem 0.7rem !important;
+        font-size: 0.6rem !important;
+        }
+}

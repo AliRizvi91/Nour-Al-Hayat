@@ -1,0 +1,56 @@
+.itemC {
+    width: 100%;
+    height: 10rem;
+    background-color: var(--Input-color);
+    box-shadow: var(--box-Shadow2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    border-radius: 3px;
+}
+
+.itemC:hover {
+    box-shadow: var(--box-Shadow1);
+    transform: scale(1.02); /* Scale up slightly */
+}
+.InputN{
+  background-color: var(--Input-color) !important;
+  color: var(--white-color) !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 0.8rem !important;
+    font-weight: bold !important;
+    width: 4.5rem !important;
+    padding: 0.3rem !important;
+    text-align: center !important;
+  }
+  .InputN::placeholder{
+    color: var(--white-color) !important;
+  }
+.btnS{
+    border-radius: 3px !important;
+    background-color: var(--secondary-color) !important;
+    border: none !important;
+    outline: none !important;
+    width: 2rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.btnS:hover{
+    background-color: var(--primary-color) !important;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px); /* Adjust the value for how much you want it to move */
+    }
+  }
+  
+  .itemC img {
+    animation: moveUpDown 2s infinite; /* Adjust the duration for speed */
+  }
+
+  

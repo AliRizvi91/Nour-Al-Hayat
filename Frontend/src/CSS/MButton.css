@@ -1,0 +1,59 @@
+/* AnimatedButton.css */
+
+.animated-button {
+    border: 1.4px solid var(--primary-color);
+    background: transparent;
+    color: var( --white-color);
+    padding: 1rem 2rem;
+    font-size: 0.7rem;
+    cursor: url(/assets/images/Pointer.png),pointer !important;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+    border-radius: 2px;
+    text-transform: uppercase;
+    z-index: 100;
+  }
+  
+  .animated-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient);
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    z-index: -99;
+  }
+  
+  .animated-button:hover::before {
+    transform: translateY(0);
+  }
+  
+  .animated-button:hover {
+    color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: var(--box-Shadow1) !important;
+  }
+  
+  
+  
+
+  /* ///////--Responsive--\\\\\\\ */
+/* ----------------------------- */
+@media (max-width : 991px){
+  .animated-button {
+    padding: 0.6rem 1.3rem;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width : 600px){
+  .animated-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.6rem !important;
+  }
+}
