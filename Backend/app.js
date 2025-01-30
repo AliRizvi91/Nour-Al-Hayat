@@ -42,7 +42,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 const corsOptions = {
-  origin: 'https://nour-al-hayat-6nii.vercel.app', // Replace with your frontend URL
+  origin: process.env.FRONTENDURL, // Replace with your frontend URL
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization'], // Specify any headers if needed
 };
