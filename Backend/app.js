@@ -43,7 +43,7 @@ app.use(cors());
 
 const corsOptions = {
   origin: process.env.FRONTENDURL, // Replace with your frontend URL
-  methods: ['GET', 'POST'],
+  methods: ['GET', 'POST','PUT','DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'], // Specify any headers if needed
 };
 
