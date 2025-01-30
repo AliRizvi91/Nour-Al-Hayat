@@ -10,7 +10,6 @@ const { addbasedata } = require('./Data/util_data.js');
 const app = express();
 const cors = require('cors');
 const http = require('http');
-const { Server } = require('socket.io');
 const bodyParser = require('body-parser');
 
 const server = http.createServer(app);
@@ -42,12 +41,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-const io = new Server(server, {
-  cors: {
-    origin: process.env.FRONTENDURL, // Ensure this is the correct port for your frontend
-    methods: ['GET', 'POST'],
-  },
-});
+const corsOptions = {
+  origin: 'https://nour-al-hayat-6nii.vercel.app', // Replace with your frontend URL
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type', 'Authorization'], // Specify any headers if needed
+};
+
+app.use(cors(corsOptions));
 
 // _____----- API -----_____
 app.use('/api/ARZ/booking', Booking_R);
@@ -80,27 +80,4 @@ ConnectDatabase().then(() => {
   });
 });
 
-module.exports = { io };
-
-
-io.on('connection', (socket) => {
-  console.log('User connected, Socket ID:', socket.id);
-
-  
-  // Handle sending messages
-  socket.on('send_message', (data) => {
-    console.log(`Message received : ${data.text}`, `Message author: ${data.senderId}`, `Message receiver : ${data.recieverId}`);
-    // Emit the message to the intended receiver
-    socket.emit('receive_message', data);
-  });
-  socket.on('join_Data', (data) => {
-    console.log(`Socket ${socket.id} joining UserId: ${data}`);
-    socket.join(data); // Join the room with the data (which could be a room name)
-  });
-
-
-  socket.on('disconnect', () => {
-    console.log('User disconnected, Socket ID:', socket.id);
-  });
-});
 
